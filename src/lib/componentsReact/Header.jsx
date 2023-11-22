@@ -4,8 +4,8 @@ import logo from '$lib/media/Logo.svg'
 
 const Header = ({ user }) => {
     useEffect(() => {
-
     }, [user]);
+
     return (
         <div className="header-container">
             <header className="header">
