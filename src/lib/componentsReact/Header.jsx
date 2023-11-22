@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css'
-import logo from '$lib/media/logo.svg'
+import logo from '$lib/media/Logo.svg'
 
 const Header = ({ user }) => {
     useEffect(() => {
