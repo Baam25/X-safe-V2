@@ -57,7 +57,6 @@ const NavBar = () => {
         { text: 'Inicio', showArrow: false },
         { text: 'Nuestros Archivos', showArrow: false },
         { text: 'Acerca nosotros', showArrow: false },
-        { text: 'Contactanos', showArrow: false },
     ];
 
     return (
