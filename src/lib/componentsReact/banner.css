@@ -251,8 +251,8 @@
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding-right: 3.4%;
-    padding-left: 3.4%;
+    padding-right: 2.4%;
+    padding-left: 2.4%;
 }
 
 .neon-caption {
@@ -260,7 +260,8 @@
 }
 
 .neon-text {
-    font-size: 22px;
+    font-size: 1.375rem;
+    /* Cambiado de 22px a rem */
     text-shadow: 0 0 10px rgba(206, 46, 238, 0.7), 0 0 20px rgba(15, 195, 233, 0.7);
 }
 
@@ -269,8 +270,22 @@
 }
 
 .neon-text-secondary {
-    font-size: 68px;
+    font-size: 4.25rem;
+    /* Cambiado de 68px a rem */
     margin-bottom: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .neon-text {
+        font-size: 1rem;
+        /* Tamaño más pequeño para pantallas más pequeñas */
+    }
+
+    .neon-text-secondary {
+        font-size: 3rem;
+        /* Tamaño más pequeño para pantallas más pequeñas */
+    }
 }
 
 /* Estilos para el efecto de neón */
