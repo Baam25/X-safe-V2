@@ -4,6 +4,7 @@ import x from '$lib/media/x.png'
 import { gsap } from 'gsap'
 import { useAnimationContext } from '$lib/componentsReact/hooks/useAnimation';
 import NeonSection from './NeonSection';
+import ObjectivesSection from './ObjectivesSection';
 
 
 const AnimationContext = createContext();
@@ -147,6 +148,7 @@ const MainBanner = () => {
                 </div>
             </div>
             <NeonSection />
+            <ObjectivesSection />
         </>
     );
 }
