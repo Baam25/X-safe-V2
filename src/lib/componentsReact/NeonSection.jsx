@@ -45,7 +45,10 @@ const NeonSection = () => {
                                 {splitTextIntoLetters("¿Listo para llevar tu compromiso con la seguridad digital al siguiente nivel?", 0.03)}
                             </p>
                             <p className="neon-text neon-text-secondary">
-                                {splitTextIntoLetters("Registrate y únete a nuestra comunidad de seguridad", 0.04)}
+                                {splitTextIntoLetters("Registrate y únete a nuestra", 0.04)}
+                            </p>
+                            <p className="neon-text neon-text-secondary">
+                                {splitTextIntoLetters("comunidad de seguridad", 0.05)}
                             </p>
                         </div>
                     </div>

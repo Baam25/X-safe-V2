@@ -251,8 +251,8 @@
     background-size: cover;
     background-position: center;
     color: #fff;
-    padding-right: 2.4%;
-    padding-left: 2.4%;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 .neon-caption {
@@ -271,20 +271,17 @@
 
 .neon-text-secondary {
     font-size: 4.25rem;
-    /* Cambiado de 68px a rem */
-    margin-bottom: 30px;
+
 }
 
 
 @media screen and (max-width: 768px) {
     .neon-text {
         font-size: 1rem;
-        /* Tamaño más pequeño para pantallas más pequeñas */
     }
 
     .neon-text-secondary {
         font-size: 3rem;
-        /* Tamaño más pequeño para pantallas más pequeñas */
     }
 }
 
