@@ -36,7 +36,7 @@ const NeonSection = () => {
     };
 
     return (
-        <div ref={sectionRef} className="neon-section">
+        <section id='Nuestros Objetivos' ref={sectionRef} className="neon-section">
             <div className="container">
                 <div className="row justify-content-center">
                     <div className="col-xl-10">
@@ -54,7 +54,7 @@ const NeonSection = () => {
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 

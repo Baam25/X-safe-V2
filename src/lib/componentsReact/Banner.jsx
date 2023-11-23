@@ -105,6 +105,30 @@ const BannerImg = () => {
     );
 };
 
+const ScrollToTop = () => {
+    const scrollToTop = () => {
+        const section = document.getElementById('Inicio');
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    };
+
+    return (
+        <button onClick={scrollToTop} style={scrollToTopStyle}>
+            ⬆️
+        </button>
+    );
+};
+
+const scrollToTopStyle = {
+    position: 'fixed',
+    bottom: '20px',
+    right: '20px',
+    background: 'none',
+    border: 'none',
+    fontSize: '2em',
+    cursor: 'pointer',
+    zIndex: 1000
+};
+
 const MainBanner = () => {
     const headlineRefs = useRef([React.createRef(), React.createRef(), React.createRef()]);
     headlineRefs.current = [];
@@ -128,7 +152,7 @@ const MainBanner = () => {
 
     return (
         <>
-            <div className='banner'>
+            <section className='banner'>
                 <div className="main-banner">
                     <div className='main-banner-inner'>
                         <div className='main-banner-content'>
@@ -148,7 +172,7 @@ const MainBanner = () => {
                         <BannerImg />
                     </div>
                 </div>
-            </div>
+            </section>
             <NeonSection />
             <ObjectivesSection />
             <AboutSection
@@ -158,13 +182,14 @@ const MainBanner = () => {
                 imageSrc={aboutImg}
                 emailText={"Contacto"}
             />
+            <ScrollToTop />
             <Footer
                 aboutTitle="Acerca de Nosotros"
                 aboutText="X-Safe es un proyecto dedicado a fortalecer la seguridad en Twitter."
                 contactInfo="Información de contacto:"
                 phoneNumber="+58 (424) 8024132"
                 email="xsafe@gmail.com"
-                authorInfo="Este es un prototipo con respecto al proyecto de grado. Bu Bárbara Barreca"
+                authorInfo="Este es un prototipo con respecto al proyecto de grado. Br Bárbara Barreca"
             />
         </>
     );

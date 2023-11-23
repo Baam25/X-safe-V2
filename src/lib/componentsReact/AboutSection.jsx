@@ -28,7 +28,7 @@ const AboutSection = ({ title, subtitle, email, emailText, imageSrc }) => {
         };
     }, []);
     return (
-        <section className={`objectives-section intro-section ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
+        <section id='Acerca de nosotros' className={`objectives-section intro-section ${isVisible ? 'visible' : ''}`} ref={sectionRef}>
             <div className="container">
                 <div className="row clearfix">
                     {/* Content Column */}

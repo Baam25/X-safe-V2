@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './styles.css'
-import logo from '$lib/media/Logo.svg'
+import logo from '$lib/media/Logo.svg';
 
 const Header = ({ user }) => {
     useEffect(() => {
     }, [user]);
 
     return (
-        <div className="header-container">
+        <section id='Inicio' className="header-container">
             <header className="header">
                 <div className="header-inner">
                     <Logo />
@@ -15,7 +15,7 @@ const Header = ({ user }) => {
                     <AuthButtons user={user} />
                 </div>
             </header>
-        </div>
+        </section>
     );
 };
 
@@ -43,8 +43,7 @@ const NavBarLi = ({ text, showArrow }) => {
         <li className={`nav-item ${isHovered ? 'x-safe-text' : ''}`}
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}>
-            <span className="nav-overlay"></span>
-            <a href="/" className={`nav-link-text ${isHovered ? 'x-safe-text' : ''}`}>
+            <a href={`#${text}`} className={`nav-link-text ${isHovered ? 'x-safe-text' : ''}`}>
                 {text}
                 {showArrow && <NavArrow />}
             </a>
@@ -55,8 +54,8 @@ const NavBarLi = ({ text, showArrow }) => {
 const NavBar = () => {
     const menuItems = [
         { text: 'Inicio', showArrow: false },
-        { text: 'Nuestros Archivos', showArrow: false },
-        { text: 'Acerca nosotros', showArrow: false },
+        { text: 'Nuestros Objetivos', showArrow: false },
+        { text: 'Acerca de nosotros', showArrow: false },
     ];
 
     return (
