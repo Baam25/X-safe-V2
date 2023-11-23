@@ -61,19 +61,6 @@
 }
 
 
-
-@keyframes fadeInUp {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .card-title {
     text-align: center;
     font-size: 2.5vw;
@@ -189,19 +176,6 @@
     inherits: false;
 }
 
-
-@keyframes slideUp {
-    from {
-        transform: translateY(100px);
-        opacity: 0;
-    }
-
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 .cards-container {
     box-sizing: border-box;
     display: flex;
@@ -224,7 +198,7 @@
 
 .intro-section {
     position: relative;
-    padding: 240px 15px;
+    padding: 120px 15px;
 
     display: flex;
 
@@ -276,4 +250,68 @@
 
 .heading-text {
     font-size: 4.5rem;
+}
+
+.subtitle-text {
+    font-size: 2rem;
+    margin: 5px 0 10px;
+}
+
+.description-text {
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+
+.image-col {
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    padding-left: 4rem;
+    border-radius: 6px;
+    border: none;
+    background: none;
+
+}
+
+.image-inner {
+    border: none;
+    /* Elimina cualquier borde del contenedor de la imagen */
+    background: none;
+    /* Asegúrate de que no haya un fondo que parezca un borde */
+    padding: 0;
+    /* Elimina cualquier padding */
+}
+
+.image-frame {
+    border: none;
+    /* Elimina cualquier borde del contenedor de la imagen */
+    background: none;
+    /* Asegúrate de que no haya un fondo que parezca un borde */
+    padding: 0;
+    /* Elimina cualquier padding */
+}
+
+.frame-image {
+    border: none;
+    /* Elimina cualquier borde del contenedor de la imagen */
+    background: none;
+    /* Asegúrate de que no haya un fondo que parezca un borde */
+    padding: 0;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px 0 rgba(15, 195, 233, 0.75);
+}
+
+.intro-section {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.objectives-section.intro-section.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
