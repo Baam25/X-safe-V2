@@ -7,6 +7,7 @@ import NeonSection from './NeonSection';
 import ObjectivesSection from './ObjectivesSection';
 import AboutSection from './AboutSection';
 import aboutImg from '$lib/media/about.png'
+import Footer from './Footer';
 
 const AnimationContext = createContext();
 
@@ -156,6 +157,14 @@ const MainBanner = () => {
                 email={"Xsafe@gmail.com"}
                 imageSrc={aboutImg}
                 emailText={"Contacto"}
+            />
+            <Footer
+                aboutTitle="Acerca de Nosotros"
+                aboutText="X-Safe es un proyecto dedicado a fortalecer la seguridad en Twitter."
+                contactInfo="Información de contacto:"
+                phoneNumber="+58 (424) 8024132"
+                email="xsafe@gmail.com"
+                authorInfo="Este es un prototipo con respecto al proyecto de grado. Bu Bárbara Barreca"
             />
         </>
     );
