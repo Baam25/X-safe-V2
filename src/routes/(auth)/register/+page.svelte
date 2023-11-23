@@ -41,7 +41,7 @@
         required
         type="text"
         name="name"
-        placeholder="Nombre de usuario"
+        placeholder="Ej. Pepe"
         class="bg-light-700 p-2 rounded text-gray-700 w-full flex"
       />
     </label>
@@ -51,7 +51,7 @@
         required
         type="email"
         name="email"
-        placeholder="Ej. Ejemplo@gmail.com"
+        placeholder="Ej. pepe@gmail.com"
         class="bg-light-700 p-2 rounded text-gray-700 w-full flex"
       />
     </label>

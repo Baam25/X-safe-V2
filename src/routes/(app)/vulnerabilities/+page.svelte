@@ -188,8 +188,8 @@
               {#if i.expand?.category}
                 <a
                   class="hover:underline"
-                  href="{base}/vulnerabilities?category={i.expand.category[0].id}"
-                  >{i.expand.category[0].name}</a
+                  href="{base}/vulnerabilities?category={i.expand.category.id}"
+                  >{i.expand.category.name}</a
                 >
                 <un-i-carbon-arrow-up-right />
               {:else}

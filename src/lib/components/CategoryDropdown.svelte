@@ -87,7 +87,6 @@
     }
     showDropdown = false;
   }
- 
 </script>
 
 <div
