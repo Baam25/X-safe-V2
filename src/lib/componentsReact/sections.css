@@ -11,94 +11,25 @@
 
 .card {
     background: #191c29;
-    width: 100%;
-    /* Para pantallas pequeñas, toma todo el ancho */
-    max-width: calc(65vh / 1.5);
-    /* Ancho máximo basado en la altura de la ventana */
-    min-height: 65vh;
-    /* Altura mínima basada en la altura de la ventana */
+    width: calc(65vh / 1.5);
+    height: calc(65vh / 1);
     padding: 3px;
-    padding-top: 3rem;
-    /* Espacio en la parte superior dentro de la tarjeta */
     border-radius: 6px;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    /* Comienza los elementos desde la parte superior */
-    align-items: center;
-    /* Centra los elementos horizontalmente */
     font-size: 1.5em;
-    /* Tamaño de fuente relativo al tamaño de fuente base del elemento padre */
     color: rgb(88 199 250 / 100%);
     cursor: pointer;
     position: relative;
     margin: 0 10px;
     font-family: 'Basier Square Medium', sans-serif;
-}
-
-@media (max-width: 768px) {
-    .card {
-        font-size: 1.2em;
-        /* Disminuye el tamaño de la fuente para pantallas medianas */
-    }
-
-    .card h2,
-    .card p {
-        padding: 0 1rem;
-        /* Ajusta el padding horizontal */
-    }
-}
-
-@media (max-width: 480px) {
-    .card {
-        font-size: 1em;
-        /* Disminuye el tamaño de la fuente para pantallas pequeñas */
-        padding-top: 2rem;
-        /* Reduce el padding superior */
-    }
-
-    .card h2,
-    .card p {
-        padding: 0 0.5rem;
-        /* Reduce aún más el padding horizontal */
-    }
-}
-
-/* Estilos para pantallas medianas */
-@media (max-width: 1024px) {
-    .card {
-        min-height: 55vh;
-        /* Altura menor para pantallas medianas */
-        padding-top: 2rem;
-        /* Menos espacio en la parte superior */
-        font-size: 1.2em;
-        /* Tamaño de fuente más pequeño */
-    }
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 768px) {
-    .card {
-        min-height: 45vh;
-        /* Altura aún menor para pantallas pequeñas */
-        padding-top: 1.5rem;
-        /* Menos espacio en la parte superior */
-        font-size: 1em;
-        /* Tamaño de fuente estándar */
-    }
-}
-
-/* Estilos para pantallas muy pequeñas */
-@media (max-width: 480px) {
-    .card {
-        min-height: 35vh;
-        /* Altura mínima para pantallas muy pequeñas */
-        padding-top: 1rem;
-        /* Menos espacio en la parte superior */
-        font-size: 0.9em;
-        /* Tamaño de fuente más pequeño para mayor legibilidad */
-    }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
 }
 
 @keyframes fadeInUp {
