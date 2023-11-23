@@ -37,6 +37,34 @@
     font-family: 'Basier Square Medium', sans-serif;
 }
 
+@media (max-width: 768px) {
+    .card {
+        font-size: 1.2em;
+        /* Disminuye el tamaño de la fuente para pantallas medianas */
+    }
+
+    .card h2,
+    .card p {
+        padding: 0 1rem;
+        /* Ajusta el padding horizontal */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        font-size: 1em;
+        /* Disminuye el tamaño de la fuente para pantallas pequeñas */
+        padding-top: 2rem;
+        /* Reduce el padding superior */
+    }
+
+    .card h2,
+    .card p {
+        padding: 0 0.5rem;
+        /* Reduce aún más el padding horizontal */
+    }
+}
+
 /* Estilos para pantallas medianas */
 @media (max-width: 1024px) {
     .card {
