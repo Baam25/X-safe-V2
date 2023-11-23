@@ -12,7 +12,7 @@
 .card {
     background: #191c29;
     width: calc(65vh / 1.5);
-    height: calc(65vh / 1);
+    height: 65vh;
     padding: 3px;
     border-radius: 6px;
     justify-content: center;
@@ -30,6 +30,44 @@
     align-items: center;
     justify-content: flex-start;
     padding-top: 3rem;
+    box-sizing: border-box;
+}
+
+@media (max-width: 1024px) {
+    .card {
+        max-width: calc(55vh / 1.5);
+        /* Ancho para pantallas medianas */
+        min-height: calc(55vh / 1.5);
+        /* Alto para pantallas medianas */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        max-width: calc(65vh);
+        /* Ancho mayor para pantallas más pequeñas */
+        min-height: calc(65vh);
+        /* Alto mayor para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        max-width: 90vw;
+        /* Ancho casi total en pantallas muy pequeñas */
+        min-height: calc(90vw / 1.2);
+        /* Alto proporcionalmente mayor para mantener el contenido legible */
+    }
+}
+
+/* Asegúrate de que el contenido se ajusta correctamente dentro de la tarjeta */
+.card h2,
+.card p {
+    margin: 0;
+    padding: 0 1rem;
+    /* Espacio horizontal para evitar que el texto toque los bordes */
+    word-wrap: break-word;
+    /* Asegura que el texto no se desborde */
 }
 
 @keyframes fadeInUp {
