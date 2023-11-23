@@ -60,15 +60,7 @@
     }
 }
 
-/* Asegúrate de que el contenido se ajusta correctamente dentro de la tarjeta */
-.card h2,
-.card p {
-    margin: 0;
-    padding: 0 1rem;
-    /* Espacio horizontal para evitar que el texto toque los bordes */
-    word-wrap: break-word;
-    /* Asegura que el texto no se desborde */
-}
+
 
 @keyframes fadeInUp {
     from {
@@ -99,26 +91,52 @@
 /* Establece un tamaño de fuente máximo y mínimo para dispositivos grandes */
 @media (min-width: 1200px) {
     .card-title {
-        font-size: 24px;
-        /* Tamaño máximo de fuente */
+        font-size: 20px;
+        /* Tamaño de fuente más pequeño que el anterior */
     }
 
     .card-text {
-        font-size: 16px;
-        /* Tamaño máximo de fuente */
+        font-size: 14px;
+        /* Tamaño de fuente más pequeño que el anterior */
     }
 }
 
-/* Establece un tamaño de fuente para dispositivos pequeños */
-@media (max-width: 600px) {
+/* Para pantallas medianas, reduce el tamaño de la fuente */
+@media (min-width: 768px) and (max-width: 1199px) {
+    .card-title {
+        font-size: 22px;
+        /* Tamaño intermedio para pantallas medianas */
+    }
+
+    .card-text {
+        font-size: 15px;
+        /* Tamaño intermedio para pantallas medianas */
+    }
+}
+
+/* Para pantallas pequeñas, reduce aún más el tamaño de la fuente */
+@media (max-width: 767px) {
     .card-title {
         font-size: 18px;
-        /* Tamaño mínimo de fuente */
+        /* Tamaño de fuente adecuado para dispositivos pequeños */
+    }
+
+    .card-text {
+        font-size: 13px;
+        /* Tamaño de fuente adecuado para dispositivos pequeños */
+    }
+}
+
+/* Para pantallas muy pequeñas, como teléfonos móviles, establece un tamaño de fuente mínimo */
+@media (max-width: 600px) {
+    .card-title {
+        font-size: 16px;
+        /* Tamaño de fuente mínimo para teléfonos móviles */
     }
 
     .card-text {
         font-size: 12px;
-        /* Tamaño mínimo de fuente */
+        /* Tamaño de fuente mínimo para teléfonos móviles */
     }
 }
 
