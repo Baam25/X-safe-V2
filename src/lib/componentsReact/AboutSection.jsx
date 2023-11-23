@@ -10,7 +10,7 @@ const AboutSection = ({ title, subtitle, description, email, emailText, imageSrc
 
                     <div className="content-inner">
                         <div className="heading-style">
-                            <div className="neon-text">{title}</div>
+                            <div className="heading-text neon-text">{title}</div>
                             <h2 className='x-safe-text'>{subtitle}</h2>
                         </div>
                         <div className="neon-text">{description}</div>
