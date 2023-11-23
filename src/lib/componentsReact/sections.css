@@ -1,6 +1,6 @@
 .objectives-section {
     background: transparent;
-    padding: 2rem 0;
+    padding: 6rem 0;
     box-sizing: border-box;
     display: flex;
     justify-content: space-evenly;
@@ -25,6 +25,63 @@
     position: relative;
     margin: 0 10px;
     font-family: 'Basier Square Medium', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 3rem;
+}
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: 1rem 0 1rem 0;
+}
+
+.card-text {
+    text-align: center;
+    color: white;
+    font-size: 1.5vw;
+    padding: 0 2rem;
+    text-wrap: pretty;
+}
+
+/* Establece un tamaño de fuente máximo y mínimo para dispositivos grandes */
+@media (min-width: 1200px) {
+    .card-title {
+        font-size: 24px;
+        /* Tamaño máximo de fuente */
+    }
+
+    .card-text {
+        font-size: 16px;
+        /* Tamaño máximo de fuente */
+    }
+}
+
+/* Establece un tamaño de fuente para dispositivos pequeños */
+@media (max-width: 600px) {
+    .card-title {
+        font-size: 18px;
+        /* Tamaño mínimo de fuente */
+    }
+
+    .card-text {
+        font-size: 12px;
+        /* Tamaño mínimo de fuente */
+    }
 }
 
 .card::before {
@@ -72,4 +129,89 @@
     syntax: "<angle>";
     initial-value: 132deg;
     inherits: false;
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.cards-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.cards-container.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.cards-container:hover {
+    transform: scale(1.05);
+}
+
+
+.intro-section {
+    position: relative;
+    padding: 240px 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+}
+
+/* Para centrar el .container y limitar su ancho en pantallas grandes */
+.intro-section .container {
+    width: 100%;
+    max-width: 1200px;
+    /* Puedes ajustar esto al ancho máximo que prefieras */
+    margin: 0 auto;
+    /* Esto es para centrar el .container si no ocupa el 100% del ancho */
+}
+
+/* Media queries para adaptar el padding y el tamaño del texto en diferentes puntos de ruptura */
+@media (max-width: 992px) {
+    .intro-section {
+        padding: 80px 15px;
+        /* Reduce el padding para dispositivos medianos */
+    }
+
+    .intro-section .content-col,
+    .intro-section .image-col {
+        /* Para pantallas más pequeñas, haz que tomen todo el ancho */
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro-section {
+        padding: 60px 15px;
+        /* Reduce el padding para dispositivos pequeños */
+    }
+
+    .intro-section .content-col .content-inner,
+    .intro-section .image-col .image-inner {
+        /* Ajusta el padding para mantener la consistencia en el diseño */
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 }

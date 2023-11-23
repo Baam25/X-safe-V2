@@ -251,6 +251,8 @@
     background-size: cover;
     background-position: center;
     color: #fff;
+    display: flex;
+    justify-content: center;
 }
 
 .neon-caption {

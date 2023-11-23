@@ -377,14 +377,6 @@ body {
     padding: 0;
 }
 
-.x-safe-text {
-    background-image: linear-gradient(to right, rgb(206, 46, 238), rgb(15, 195, 233) 50%, rgb(206, 46, 238));
-    background-size: 200% auto;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    animation: gradient 15s linear infinite;
-}
 
 @keyframes gradient {
     0% {
