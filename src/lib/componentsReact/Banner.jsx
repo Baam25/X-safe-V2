@@ -153,7 +153,7 @@ const MainBanner = () => {
             <AboutSection
                 title="Acerca de Nosotros"
                 subtitle={"X-Safe: Comprometidos con la Investigación y la Seguridad en Línea"}
-                description={`El enfoque principal de este proyecto es proporcionar una comprensión detallada y actualizada de los incidentes de seguridad en la plataforma X. Nuestro enfoque se centra en apoyar la investigación académica y el conocimiento público, ofreciendo un repositorio completo y accesible para todo tipo de usuarios. Se busca la mejora continua y la adaptación a las cambiantes dinámicas de seguridad en línea. Por lo tanto nos mantenemos al día con las últimas tendencias y amenazas para asegurar que nuestra comunidad esté informada y protegida."El único camino seguro es asumir que cada cosa es insegura hasta que se demuestre lo contrario." Bruce Schneier `}
+                description={`El enfoque principal de este proyecto es proporcionar una comprensión detallada y actualizada de los incidentes de seguridad en la plataforma X. Nuestro enfoque se centra en apoyar la investigación académica y el conocimiento público, ofreciendo un repositorio completo y accesible para todo tipo de usuarios."El único camino seguro es asumir que cada cosa es insegura hasta que se demuestre lo contrario." Bruce Schneier `}
                 email={"Xsafe@gmail.com"}
                 imageSrc={aboutImg}
                 emailText={"Contacto"}

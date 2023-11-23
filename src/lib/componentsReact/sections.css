@@ -91,13 +91,15 @@
 /* Establece un tamaño de fuente máximo y mínimo para dispositivos grandes */
 @media (min-width: 1200px) {
     .card-title {
-        font-size: 20px;
-        /* Tamaño de fuente más pequeño que el anterior */
+        /* Si el tamaño de la fuente calculada en 'vw' es menor que 20px, usa 20px */
+        font-size: calc(1.5vw + 1px);
+
     }
 
     .card-text {
-        font-size: 18px;
-        /* Tamaño de fuente más pequeño que el anterior */
+        /* Si el tamaño de la fuente calculada en 'vw' es menor que 14px, usa 14px */
+        font-size: calc(1vw + 1px);
+
     }
 }
 
