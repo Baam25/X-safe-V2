@@ -8,6 +8,7 @@ import ObjectivesSection from './ObjectivesSection';
 import AboutSection from './AboutSection';
 import aboutImg from '$lib/media/about.png'
 import Footer from './Footer';
+import Carrusel from './Carrusel';
 
 const AnimationContext = createContext();
 
@@ -182,6 +183,7 @@ const MainBanner = () => {
                 imageSrc={aboutImg}
                 emailText={"Contacto"}
             />
+            <Carrusel />
             <ScrollToTop />
             <Footer
                 aboutTitle="Acerca de Nosotros"

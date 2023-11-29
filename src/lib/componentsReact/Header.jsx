@@ -5,7 +5,6 @@ import logo from '$lib/media/Logo.svg';
 const Header = ({ user }) => {
     useEffect(() => {
     }, [user]);
-
     return (
         <section id='Inicio' className="header-container">
             <header className="header">
