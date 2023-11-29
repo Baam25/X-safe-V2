@@ -176,6 +176,7 @@ const MainBanner = () => {
             </section>
             <NeonSection />
             <ObjectivesSection />
+            <Carrusel />
             <AboutSection
                 title="Acerca de Nosotros"
                 subtitle={"X-Safe: Comprometidos con la Investigación y la Seguridad en Línea"}
@@ -183,7 +184,6 @@ const MainBanner = () => {
                 imageSrc={aboutImg}
                 emailText={"Contacto"}
             />
-            <Carrusel />
             <ScrollToTop />
             <Footer
                 aboutTitle="Acerca de Nosotros"
