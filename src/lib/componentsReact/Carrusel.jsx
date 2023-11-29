@@ -3,9 +3,6 @@ import { pb } from '$lib'
 import './carrusel.css'
 import { PUBLIC_POCKETBASE_URL } from "$env/static/public";
 
-const data = await pb.collection('vulnerabilities').getFullList({ filter: 'severity = "critic" || severity = "high"' })
-const dataSlides = data.slice(0, 10)
-
 
 const Slide = ({ index, id, title, attachment, description }) => {
 
@@ -25,7 +22,21 @@ const Slide = ({ index, id, title, attachment, description }) => {
 };
 const Carrusel = () => {
     const [currentPage, setCurrentPage] = useState(0);
-    const slideCount = dataSlides.length; // Usa la longitud de tus datos
+    const [dataSlides, setDataSlides] = useState([]); // Estado para almacenar los slides
+
+    useEffect(() => {
+        const fetchData = async () => {
+            try {
+                const data = await pb.collection('vulnerabilities').getFullList({ filter: 'severity = "critic" || severity = "high"' });
+                setDataSlides(data.slice(0, 10)); // Almacena los primeros 10 slides
+            } catch (error) {
+                console.error("Error al cargar datos:", error);
+            }
+        };
+
+        fetchData();
+    }, []);
+    const slideCount = dataSlides.length;
 
     const slidesPerPage = () => window.innerWidth > 1700 ? 4 : window.innerWidth > 1200 ? 3 : 2;
     const maxPageCount = () => Math.floor(slideCount / slidesPerPage());
